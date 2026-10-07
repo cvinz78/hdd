@@ -1,4 +1,4 @@
-# cvinz78
+# HDD
 
 ![Banner](assets/banner.png)
 
@@ -8,7 +8,7 @@
 
 ## 🇩🇪 Deutsch
 
-**cvinz78** ist ein Windows-Batch-Skript (`hdd.bat`) zur Datenträger-Verwaltung mit farbigem Textmenü und Command-Line-Modus. Es bündelt die wichtigsten Wartungsaufgaben rund um Festplatten und SSDs in einem Werkzeug.
+**HDD** ist ein Windows-Batch-Skript (`hdd.bat`) von **cvinz78** zur Datenträger-Verwaltung mit farbigem Textmenü und Command-Line-Modus. Es bündelt die wichtigsten Wartungsaufgaben rund um Festplatten und SSDs in einem Werkzeug.
 
 ### Funktionen
 
@@ -68,7 +68,7 @@ Dieses Projekt ist unter der [GPL-3.0](LICENSE) (GNU General Public License v3.0
 
 ## 🇬🇧 English
 
-**cvinz78** is a Windows batch script (`hdd.bat`) for disk drive management with a colorful text menu and a command-line mode. It bundles the most important maintenance tasks for hard disks and SSDs into a single tool.
+**HDD** is a Windows batch script (`hdd.bat`) by **cvinz78** for disk drive management with a colorful text menu and a command-line mode. It bundles the most important maintenance tasks for hard disks and SSDs into a single tool.
 
 ### Features
 
