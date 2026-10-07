@@ -1,6 +1,6 @@
 # HDD
 
-![Banner](assets/banner.png)
+![Banner](assets/banner.png?v=2)
 
 **[🇩🇪 Deutsch](#-deutsch)** · **[🇬🇧 English](#-english)**
 
