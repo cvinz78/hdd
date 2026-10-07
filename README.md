@@ -47,14 +47,17 @@ Startet das farbige Menü. Nach Auswahl einer Aktion werden die verfügbaren Lau
 | `hdd -r` | System neustarten |
 | `hdd -s` | System herunterfahren |
 | `hdd -nc` | Farben deaktivieren (kombinierbar, z. B. `hdd -nc -d C:`) |
+| `hdd -de` | Deutsch erzwingen (kombinierbar, z. B. `hdd -de -d C:`) |
+| `hdd -en` | Englisch erzwingen (kombinierbar, z. B. `hdd -en -d C:`) |
 | `hdd -h`, `--help`, `/?` | Hilfe anzeigen |
 
 Im Argumentmodus fragt das Skript nicht nach und gibt den Exitcode des ausgeführten Befehls zurück – praktisch für Automatisierung und die Weiterleitung in Dateien (dort empfiehlt sich `-nc`).
 
 ### Hinweise
 
+- **Zweisprachig**: Das Skript erkennt die Windows-Anzeigesprache automatisch und gibt alle Meldungen auf Deutsch oder Englisch aus (`-de`/`-en` erzwingt die Sprache).
 - **Administratorrechte** werden für alle Aktionen benötigt; das Skript startet sich bei Bedarf automatisch mit erhöhten Rechten neu.
-- Bei **`chkdsk C:`** erkennt das Skript das Systemlaufwerk und plant die Prüfung beim nächsten Neustart ein, falls das Laufwerk nicht gesperrt werden kann (Bestätigung mit `J`).
+- Bei **`chkdsk C:`** erkennt das Skript das Systemlaufwerk und plant die Prüfung beim nächsten Neustart ein, falls das Laufwerk nicht gesperrt werden kann (Bestätigung mit `J`, auf englischen Systemen `Y`).
 - **Diskpart** arbeitet direkt auf den Datenträgern – Befehle dort sorgfältig prüfen.
 - Der Terminal-Emulator muss ANSI-Escape-Sequenzen unterstützen (Windows-Terminal und moderne Windows-Versionen tun dies standardmäßig; mit `-nc` läuft alles farblos).
 
@@ -107,12 +110,15 @@ Starts the colored menu. After choosing an action, the available drives are disp
 | `hdd -r` | Restart the system |
 | `hdd -s` | Shut down the system |
 | `hdd -nc` | Disable colors (combinable, e.g. `hdd -nc -d C:`) |
+| `hdd -de` | Force German (combinable, e.g. `hdd -de -d C:`) |
+| `hdd -en` | Force English (combinable, e.g. `hdd -en -d C:`) |
 | `hdd -h`, `--help`, `/?` | Show help |
 
 In argument mode the script asks no questions and returns the exit code of the executed command – useful for automation and for redirecting output to files (where `-nc` is recommended).
 
 ### Notes
 
+- **Bilingual**: The script automatically detects the Windows display language and outputs all messages in German or English (`-de`/`-en` force the language).
 - **Administrator rights** are required for all actions; the script automatically restarts itself elevated when needed.
 - For **`chkdsk C:`** the script detects the system drive and schedules the check for the next reboot if the drive cannot be locked (confirm with `Y`/`J`).
 - **Diskpart** works directly on the disks – check its commands carefully.
